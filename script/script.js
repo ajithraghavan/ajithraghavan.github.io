@@ -10,12 +10,12 @@
                             (prefersDarkScheme.matches ? 'dark' : 'light');
         
         // Set the initial theme
-        document.body.classList.toggle('dark-theme', currentTheme === 'dark');
+        document.body.classList.toggle('light-theme', currentTheme === 'light');
         
         // Toggle theme when button is clicked
         themeToggle.addEventListener('click', () => {
-            const isDark = document.body.classList.toggle('dark-theme');
-            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            const isLight = document.body.classList.toggle('light-theme');
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
         });
 
         // Mobile menu toggle

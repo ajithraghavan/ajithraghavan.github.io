@@ -16,7 +16,7 @@
   --transition-speed: 0.3s;
 }
 
-body:not(.dark-theme) {
+body.light-theme {
   --primary-color: #ffffff;
   --secondary-color: #f8f9fa;
   --text-color: #1a1a1a;
@@ -598,7 +598,7 @@ body {
   color: #eaeaea;
 }
 
-body:not(.dark-theme) {
+body.light-theme {
   background-color: #fff;
   color: #1a1a1a;
 }
