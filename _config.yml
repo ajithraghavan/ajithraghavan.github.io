@@ -1,0 +1,56 @@
+# Site settings
+title: "Ajith Raghavan"
+description: "Ajith Raghavan's personal Tech blog sharing insights and tutorials about Technology, Programming, AI, Machine Learning"
+baseurl: ""
+url: "https://ajithraghavan.github.io"
+author: "Ajith Raghavan"
+
+# Social links
+social:
+  github: "https://github.com/ajithraghavan"
+  twitter: "https://twitter.com/Ajith2Krishna"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Permalink structure
+permalink: /blog/:title/
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Exclude from processing
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Site navigation
+navigation:
+  - title: "Blog"
+    url: /blog/
+  - title: "About" 
+    url: /about/

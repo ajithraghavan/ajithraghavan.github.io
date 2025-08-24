@@ -1,0 +1,31 @@
+---
+layout: default
+title: "Blog"
+description: "List of all Ajith Raghavan's Blog Posts"
+permalink: /blog/
+---
+
+<div class="container">
+    <div class="breadcrumbs">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="#">Blog</a>
+    </div>
+    
+    <article>
+        <header class="article-header">
+            <h1>All Blog Posts</h1>
+        </header>
+
+        <div class="article-content">
+            <div class="table-of-contents">
+                <h3>Posts</h3>
+                <ul>
+                    {% for post in site.posts %}
+                    <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </article>
+</div>
