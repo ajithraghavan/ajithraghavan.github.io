@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Try My ~3.5 Million Model Instead for ✨😉"
-date: 2025-08-25
+date: 2025-08-24
 author: "Ajith Raghavan"
 description: "Try My ~3.5 Million Model Instead for ✨😉 for Emoji Generation"
 tags: ["🧑‍💻 ML", "Neural Network", "RNN", "LSTM"]
