@@ -1,4 +1,86 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-08-25T00:59:42+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ajith Raghavan</title><subtitle>Ajith Raghavan&apos;s personal Tech blog sharing insights and tutorials about Technology, Programming, AI, Machine Learning</subtitle><author><name>Ajith Raghavan</name></author><entry><title type="html">Try My ~3.5 Million Parameters Model Instead for ✨😉</title><link href="http://localhost:4000/blog/emoji-generator/" rel="alternate" type="text/html" title="Try My ~3.5 Million Parameters Model Instead for ✨😉" /><published>2025-08-24T00:00:00+05:30</published><updated>2025-08-24T00:00:00+05:30</updated><id>http://localhost:4000/blog/emoji-generator</id><content type="html" xml:base="http://localhost:4000/blog/emoji-generator/"><![CDATA[<h2 id="intro">😊 Introduction</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-08-27T02:17:26+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ajith Raghavan</title><subtitle>Ajith Raghavan&apos;s personal Tech blog sharing insights and tutorials about Technology, Programming, AI, Machine Learning</subtitle><author><name>Ajith Raghavan</name></author><entry><title type="html">🏞️ CNN Basics</title><link href="http://localhost:4000/blog/cnn-intro/" rel="alternate" type="text/html" title="🏞️ CNN Basics" /><published>2025-08-27T00:00:00+05:30</published><updated>2025-08-27T00:00:00+05:30</updated><id>http://localhost:4000/blog/cnn-intro</id><content type="html" xml:base="http://localhost:4000/blog/cnn-intro/"><![CDATA[<h2 id="-convnet">⿻ ConvNet</h2>
+
+<p>☝️- This should be best(available) Emoji 😉 - <a href="https://ajithraghavan.github.io/blog/emoji-generator/">Emoji Generator</a></p>
+
+<p>Convolution Neural Network (CNN or ConvNet) is a type of Neural Network, which is good at processing image</p>
+
+<p>We do Convolution(Cross Correlation), by following BUT much larger and bigger</p>
+
+<p>Yes, now also, still competitive to ViT(Vision Transformer)</p>
+
+<p>With ConvNet we can do,</p>
+
+<h3 id="image-classification">Image Classification</h3>
+
+<p>Where we classify image, like what contains in an image</p>
+
+<p>Some Models are:</p>
+
+<ol>
+  <li>AlexNet</li>
+  <li>VGGNet(16, 19)</li>
+  <li>Inception(Very different approach)</li>
+  <li>ResNet(Responsible for Residual Connection which is used in Transformers too!)</li>
+</ol>
+
+<h3 id="object-detection">Object Detection</h3>
+
+<p>Detect and draw Bounding Box around the objects in the image like Car, Pedastrian</p>
+
+<p>Some Models are:</p>
+
+<ol>
+  <li>R-CNN</li>
+  <li>YOLO
+    <ul>
+      <li>YOLO is such an amazing Paper covers cool topics like:
+        <ol>
+          <li>Intersection Over Union(IoU)</li>
+          <li>Non-Max Suppression</li>
+          <li>Anchor Boxes</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="image-segmentation">Image Segmentation</h3>
+
+<p>Where we paint the color around possible Objects in an image</p>
+
+<p>Some Models are:</p>
+
+<ol>
+  <li>FCN</li>
+  <li>U‑Net 😍</li>
+</ol>
+
+<p>And much more CNN Models</p>
+
+<p>Let us discuss more in another Post!</p>
+
+<h3 id="what-deep-convnet-learns">What Deep ConvNet Learns?</h3>
+
+<p>But, crucial question CNN have these layers, what these layers learn?</p>
+
+<p>Let us Consider this image and let us consider that this CNN has 4 Layers</p>
+
+<p><img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2019/01/image-classification-model-6731d4bb5c389.webp" alt="Image" />
+Source : <a href="analyticsvidhya.com">Analytics Vidhya</a></p>
+
+<p>It might Learn the Features like,</p>
+
+<p>First Layer :  “Straight Line”, “Cross Lines”, etc</p>
+
+<p>Second Layer : “Curves”, “ Common Pattern”, etc</p>
+
+<p>Third Layer : “Cat Nose”, “Dog Ears” etc</p>
+
+<p>Fourth Layer : “Cat Face”, “Dog Face” etc</p>
+
+<p>Earlier Layers learns small patters like Lines, Shapes and</p>
+
+<p>Deep Layers will Learn Complex Features like Nose, Ears, even Face etc</p>]]></content><author><name>Ajith Raghavan</name></author><category term="🧑‍💻 ML" /><category term="Neural Network" /><category term="CNN" /><summary type="html"><![CDATA[CNN Basics]]></summary></entry><entry><title type="html">Try My ~3.5 Million Parameters Model Instead for ✨😉</title><link href="http://localhost:4000/blog/emoji-generator-copy/" rel="alternate" type="text/html" title="Try My ~3.5 Million Parameters Model Instead for ✨😉" /><published>2025-08-24T00:00:00+05:30</published><updated>2025-08-24T00:00:00+05:30</updated><id>http://localhost:4000/blog/emoji-generator%20copy</id><content type="html" xml:base="http://localhost:4000/blog/emoji-generator-copy/"><![CDATA[<h2 id="intro">😊 Introduction</h2>
 
 <p>I thought to Build a Machine Learning Model to generate Emojis for My Writing content</p>
 

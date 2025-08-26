@@ -122,6 +122,19 @@ ul {
   margin-bottom: 1rem;
 }
 
+ol {
+  list-style-position: inside;
+  margin-bottom: 1rem;
+}
+
+.article-content ul li {
+  margin-bottom: 0.5rem;
+}
+
+.article-content ol li {
+  margin-bottom: 0.5rem;
+}
+
 /* Container */
 .container {
   width: 90%;
@@ -378,8 +391,31 @@ header {
   padding-left: 1rem;
 }
 
+/* Ensure nested lists in article content display properly */
+.article-content ul ul {
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.article-content ol ol {
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+  list-style-type: decimal;
+}
+
 .table-of-contents li {
   margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-date {
+  color: var(--muted-color);
+  font-size: 0.9rem;
+  margin-left: 1rem;
+  flex-shrink: 0;
 }
 
 .code-block {
