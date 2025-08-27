@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CNN Basics">
+    <title>🏞️ CNN Basics | Ajith Raghavan</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.ico">
+    
+    <!-- Open Graph Meta Tags for social sharing -->
+    <meta property="og:title" content="🏞️ CNN Basics | Ajith Raghavan">
+    <meta property="og:description" content="CNN Basics">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://localhost:4000/blog/cnn-intro-copy/">
+    <meta property="og:image" content="http://localhost:4000">
+    
+    
+    <!-- Article specific meta -->
+    <meta property="article:published_time" content="2025-08-26T00:00:00+05:30">
+    <meta property="article:author" content="Ajith Raghavan">
+    
+    <meta property="article:section" content="">
+    
+    
+    
+    <meta property="article:tag" content="🧑‍💻 ML">
+    
+    <meta property="article:tag" content="Neural Network">
+    
+    <meta property="article:tag" content="CNN">
+    
+    
+    
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>🏞️ CNN Basics | Ajith Raghavan</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="🏞️ CNN Basics" />
+<meta name="author" content="Ajith Raghavan" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="CNN Basics" />
+<meta property="og:description" content="CNN Basics" />
+<link rel="canonical" href="http://localhost:4000/blog/cnn-intro-copy/" />
+<meta property="og:url" content="http://localhost:4000/blog/cnn-intro-copy/" />
+<meta property="og:site_name" content="Ajith Raghavan" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-08-26T00:00:00+05:30" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="🏞️ CNN Basics" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ajith Raghavan"},"dateModified":"2025-08-26T00:00:00+05:30","datePublished":"2025-08-26T00:00:00+05:30","description":"CNN Basics","headline":"🏞️ CNN Basics","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/cnn-intro-copy/"},"url":"http://localhost:4000/blog/cnn-intro-copy/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    
+    <!-- MathJax for rendering mathematical equations -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true,
+                processEnvironments: true
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+            }
+        };
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    
+    <header>
+    <div class="container">
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="/">Ajith Raghavan</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                
+                <li><a href="/blog/">Blog</a></li>
+                
+                <li><a href="/about/">About</a></li>
+                
+                <li>
+                    <button class="theme-toggle" aria-label="Toggle dark mode" style="margin-top: -5px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main class="article-page">
+        <div class="container">
+    <div class="breadcrumbs">
+        <a href="/">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="/blog/">Blog</a>
+        <span class="breadcrumb-separator">/</span>
+        <span>🏞️ CNN Basics</span>
+    </div>
+    
+    <article>
+        <header class="article-header">
+            <h1>🏞️ CNN Basics</h1>
+            <div class="article-meta">
+                <time datetime="2025-08-26T00:00:00+05:30">08/26/2025</time>
+                 · Ajith Raghavan
+                
+            </div>
+        </header>
+
+        <div class="article-content">
+            
+            <div class="article-cover">
+                <div class="theme-info">
+                    <h2></h2>
+                    <h1 class="title">🏞️ CNN Basics</h1>
+                    
+                    <div class="features">
+                        
+                        <span class="feature">🧑‍💻 ML</span> | 
+                        
+                        <span class="feature">Neural Network</span> | 
+                        
+                        <span class="feature">CNN</span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+            
+
+            <h2 id="-convnet">⿻ ConvNet</h2>
+
+<p>☝️- This should be best(available) Emoji 😉 - <a href="https://ajithraghavan.github.io/blog/emoji-generator/">Emoji Generator</a></p>
+
+<p>Convolution Neural Network (CNN or ConvNet) is a type of Neural Network, which is good at processing image</p>
+
+<p>We do Convolution(Cross Correlation), by following BUT much larger and bigger</p>
+
+<p>Yes, now also, still competitive to ViT(Vision Transformer)</p>
+
+<p>With ConvNet we can do,</p>
+
+<h3 id="image-classification">Image Classification</h3>
+
+<p>Where we classify image, like what contains in an image</p>
+
+<p>Some Models are:</p>
+
+<ol>
+  <li>AlexNet</li>
+  <li>VGGNet(16, 19)</li>
+  <li>Inception(Very different approach)</li>
+  <li>ResNet(Responsible for Residual Connection which is used in Transformers too!)</li>
+</ol>
+
+<h3 id="object-detection">Object Detection</h3>
+
+<p>Detect and draw Bounding Box around the objects in the image like Car, Pedastrian</p>
+
+<p>Some Models are:</p>
+
+<ol>
+  <li>R-CNN</li>
+  <li>YOLO
+    <ul>
+      <li>YOLO is such an amazing Paper covers cool topics like:
+        <ol>
+          <li>Intersection Over Union(IoU)</li>
+          <li>Non-Max Suppression</li>
+          <li>Anchor Boxes</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="image-segmentation">Image Segmentation</h3>
+
+<p>Where we paint the color around possible Objects in an image</p>
+
+<p>Some Models are:</p>
+
+<ol>
+  <li>FCN</li>
+  <li>U‑Net 😍</li>
+</ol>
+
+<p>And much more CNN Models</p>
+
+<p>Let us discuss more in another Post!</p>
+
+<h3 id="what-deep-convnet-learns">What Deep ConvNet Learns?</h3>
+
+<p>The crucial question CNN have these layers, what these layers learn?</p>
+
+<p>Let us Consider this image and let us consider that this CNN has 4 Layers</p>
+
+<p><img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2019/01/image-classification-model-6731d4bb5c389.webp" alt="Image" />
+Source : <a href="analyticsvidhya.com">Analytics Vidhya</a></p>
+
+<p>It might Learn the Features like,</p>
+
+<p>First Layer :  “Straight Line”, “Cross Lines”, etc</p>
+
+<p>Second Layer : “Curves”, “ Common Pattern”, etc</p>
+
+<p>Third Layer : “Cat Nose”, “Dog Ears” etc</p>
+
+<p>Fourth Layer : “Cat Face”, “Dog Face” etc</p>
+
+<blockquote>
+  <p>Earlier Layers learns small patters like Lines, Shapes and</p>
+</blockquote>
+
+<blockquote>
+  <p>Deep Layers will Learn Complex Features like Nose, Ears, even Face etc</p>
+</blockquote>
+
+<p>Thanks for reading</p>
+
+        </div>
+    </article>
+</div>
+    </main>
+
+    <footer>
+    <div class="container">
+        <p>&copy; <span id="current-year">2025</span> Ajith Raghavan. Content licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></p>
+    </div>
+</footer>
+    
+    <script type="text/javascript" src="/script/script.js"></script>
+</body>
+</html>

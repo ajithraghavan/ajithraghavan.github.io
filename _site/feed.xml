@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-08-27T02:20:56+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ajith Raghavan</title><subtitle>Ajith Raghavan&apos;s personal Tech blog sharing insights and tutorials about Technology, Programming, AI, Machine Learning</subtitle><author><name>Ajith Raghavan</name></author><entry><title type="html">🏞️ CNN Basics</title><link href="http://localhost:4000/blog/cnn-intro/" rel="alternate" type="text/html" title="🏞️ CNN Basics" /><published>2025-08-26T00:00:00+05:30</published><updated>2025-08-26T00:00:00+05:30</updated><id>http://localhost:4000/blog/cnn-intro</id><content type="html" xml:base="http://localhost:4000/blog/cnn-intro/"><![CDATA[<h2 id="-convnet">⿻ ConvNet</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-08-27T16:53:13+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ajith Raghavan</title><subtitle>Ajith Raghavan&apos;s personal Tech blog sharing insights and tutorials about Technology, Programming, AI, Machine Learning</subtitle><author><name>Ajith Raghavan</name></author><entry><title type="html">🏞️ CNN Basics</title><link href="http://localhost:4000/blog/cnn-intro-copy/" rel="alternate" type="text/html" title="🏞️ CNN Basics" /><published>2025-08-26T00:00:00+05:30</published><updated>2025-08-26T00:00:00+05:30</updated><id>http://localhost:4000/blog/cnn-intro%20copy</id><content type="html" xml:base="http://localhost:4000/blog/cnn-intro-copy/"><![CDATA[<h2 id="-convnet">⿻ ConvNet</h2>
 
 <p>☝️- This should be best(available) Emoji 😉 - <a href="https://ajithraghavan.github.io/blog/emoji-generator/">Emoji Generator</a></p>
 
@@ -61,7 +61,7 @@
 
 <h3 id="what-deep-convnet-learns">What Deep ConvNet Learns?</h3>
 
-<p>But, crucial question CNN have these layers, what these layers learn?</p>
+<p>The crucial question CNN have these layers, what these layers learn?</p>
 
 <p>Let us Consider this image and let us consider that this CNN has 4 Layers</p>
 
@@ -78,9 +78,86 @@ Source : <a href="analyticsvidhya.com">Analytics Vidhya</a></p>
 
 <p>Fourth Layer : “Cat Face”, “Dog Face” etc</p>
 
-<p>Earlier Layers learns small patters like Lines, Shapes and</p>
+<blockquote>
+  <p>Earlier Layers learns small patters like Lines, Shapes and</p>
+</blockquote>
 
-<p>Deep Layers will Learn Complex Features like Nose, Ears, even Face etc</p>]]></content><author><name>Ajith Raghavan</name></author><category term="🧑‍💻 ML" /><category term="Neural Network" /><category term="CNN" /><summary type="html"><![CDATA[CNN Basics]]></summary></entry><entry><title type="html">Try My ~3.5 Million Parameters Model Instead for ✨😉</title><link href="http://localhost:4000/blog/emoji-generator-copy/" rel="alternate" type="text/html" title="Try My ~3.5 Million Parameters Model Instead for ✨😉" /><published>2025-08-24T00:00:00+05:30</published><updated>2025-08-24T00:00:00+05:30</updated><id>http://localhost:4000/blog/emoji-generator%20copy</id><content type="html" xml:base="http://localhost:4000/blog/emoji-generator-copy/"><![CDATA[<h2 id="intro">😊 Introduction</h2>
+<blockquote>
+  <p>Deep Layers will Learn Complex Features like Nose, Ears, even Face etc</p>
+</blockquote>
+
+<p>Thanks for reading</p>]]></content><author><name>Ajith Raghavan</name></author><category term="🧑‍💻 ML" /><category term="Neural Network" /><category term="CNN" /><summary type="html"><![CDATA[CNN Basics]]></summary></entry><entry><title type="html">Neural Style Transfer Basics</title><link href="http://localhost:4000/blog/nst-intro/" rel="alternate" type="text/html" title="Neural Style Transfer Basics" /><published>2025-08-26T00:00:00+05:30</published><updated>2025-08-26T00:00:00+05:30</updated><id>http://localhost:4000/blog/nst-intro</id><content type="html" xml:base="http://localhost:4000/blog/nst-intro/"><![CDATA[<h2 id="neural-style-transfernst">Neural Style Transfer(NST)</h2>
+
+<p>It is a technique to apply the “filter” technically “Style” to your “original” technically “Content” image, it would come under an umbrella of GenAI(not that much)</p>
+
+<p>Goal of NST is to preserve the Content of the Content Image and also to apply the Style of the Style Reference Image!</p>
+
+<p>To understand NST better we need to understand what is CNN and what is learns?</p>
+
+<p><a href="https://ajithraghavan.github.io/blog/cnn-intro/">Please learn here</a></p>
+
+<h2 id="️-back-to-nst">↪️ Back to NST!</h2>
+
+<p>What each Layers in ConvNet is the main anchor we come back to NST for understanding!</p>
+
+<p>In NST like Typical Neural Network, we won’t let learn the Parameters of the Neural Network by using Loss Function, but we will compute loss between Content, Style and Generated Image</p>
+
+<p>😎 Cool right?</p>
+
+<h3 id="generating-procedure">Generating Procedure</h3>
+<p>To generate and image with Content Image in Style of Style Image we need to have Cost Function to tell us each like,</p>
+
+<p>How much different is Generated Image from Content Image?</p>
+
+<p>How much different is Generated Image from Style Image?</p>
+
+<h5 id="content-cost-function-">Content Cost Function :</h5>
+<p>How different the Generated Image is from Content Image</p>
+<div align="center">
+    $$J_{\text{content}}(C, G) = \frac{1}{2} \sum_{i,j} \left(F_{ij}^G - F_{ij}^C\right)^2$$
+</div>
+
+<h5 id="style-loss-for-a-single-layer-">Style Loss for a Single Layer :</h5>
+<p>We say “Style” as a Correlation between Activations across channels</p>
+<div align="center">
+    $$J_{style} = \frac{1}{4N_l^2M_l^2} \sum_{i,j} \left(G_{ij}^G - G_{ij}^S\right)^2$$
+</div>
+<p>Correlation tells you which of the “High Level Texture” components tends to occur or not occur together in part of the image</p>
+
+<p>So, Degree of Correlation gives us one way of measuring this</p>
+
+<p>Across Channels we will find Correlation like if the image has Specific Texture how much degree Another Texture exists</p>
+
+<p>We can assume ,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Specific Texture as "Vertical Lines", "Cross Lines", etc
+
+2. Another Texture as "Cross Lines", etc
+</code></pre></div></div>
+
+<p>Correlated : Means whenever the part of the image has Specific Texture, that part of the image will probably have Another Texture</p>
+
+<p>Uncorrelated : Means whenever the part of the image has Specific Texture, probably won’t have Another Texture</p>
+
+<p>For that we need Gram Matrix to do that!</p>
+<h5 id="gram-matrix--">Gram Matrix  :</h5>
+
+<div align="center">
+    $$G_{ij}^l = \sum_{k} F_{ik}^l F_{jk}^l$$
+</div>
+
+<h5 id="total-loss-">Total Loss :</h5>
+<p>Now we Compute the Total Loss and Optimize the Generated Image and get our desired Style Image</p>
+
+<div align="center">
+    $$J_{\text{total}}(C, S, G) = \alpha J_{\text{content}}(C, G) + \beta J_{\text{style}}(S, G)$$
+</div>
+
+<blockquote>
+  <p>We get, Generated Image in the Content of Content Image and Style of Style Image</p>
+</blockquote>
+
+<p>Thanks for reading</p>]]></content><author><name>Ajith Raghavan</name></author><category term="🧑‍💻 ML" /><category term="Neural Network" /><category term="CNN" /><summary type="html"><![CDATA[NST Basics]]></summary></entry><entry><title type="html">Try My ~3.5 Million Parameters Model Instead for ✨😉</title><link href="http://localhost:4000/blog/emoji-generator-copy/" rel="alternate" type="text/html" title="Try My ~3.5 Million Parameters Model Instead for ✨😉" /><published>2025-08-24T00:00:00+05:30</published><updated>2025-08-24T00:00:00+05:30</updated><id>http://localhost:4000/blog/emoji-generator%20copy</id><content type="html" xml:base="http://localhost:4000/blog/emoji-generator-copy/"><![CDATA[<h2 id="intro">😊 Introduction</h2>
 
 <p>I thought to Build a Machine Learning Model to generate Emojis for My Writing content</p>
 

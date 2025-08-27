@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CNN Basics">
-    <title>🏞️ CNN Basics | Ajith Raghavan</title>
+    <meta name="description" content="NST Basics">
+    <title>Neural Style Transfer Basics | Ajith Raghavan</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="icon" href="favicon.ico">
     
     <!-- Open Graph Meta Tags for social sharing -->
-    <meta property="og:title" content="🏞️ CNN Basics | Ajith Raghavan">
-    <meta property="og:description" content="CNN Basics">
+    <meta property="og:title" content="Neural Style Transfer Basics | Ajith Raghavan">
+    <meta property="og:description" content="NST Basics">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="http://localhost:4000/blog/cnn-intro/">
+    <meta property="og:url" content="http://localhost:4000/blog/nst-intro/">
     <meta property="og:image" content="http://localhost:4000">
     
     
@@ -35,22 +35,22 @@
     
     
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>🏞️ CNN Basics | Ajith Raghavan</title>
+<title>Neural Style Transfer Basics | Ajith Raghavan</title>
 <meta name="generator" content="Jekyll v4.3.4" />
-<meta property="og:title" content="🏞️ CNN Basics" />
+<meta property="og:title" content="Neural Style Transfer Basics" />
 <meta name="author" content="Ajith Raghavan" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="CNN Basics" />
-<meta property="og:description" content="CNN Basics" />
-<link rel="canonical" href="http://localhost:4000/blog/cnn-intro/" />
-<meta property="og:url" content="http://localhost:4000/blog/cnn-intro/" />
+<meta name="description" content="NST Basics" />
+<meta property="og:description" content="NST Basics" />
+<link rel="canonical" href="http://localhost:4000/blog/nst-intro/" />
+<meta property="og:url" content="http://localhost:4000/blog/nst-intro/" />
 <meta property="og:site_name" content="Ajith Raghavan" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2025-08-26T00:00:00+05:30" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="🏞️ CNN Basics" />
+<meta property="twitter:title" content="Neural Style Transfer Basics" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ajith Raghavan"},"dateModified":"2025-08-26T00:00:00+05:30","datePublished":"2025-08-26T00:00:00+05:30","description":"CNN Basics","headline":"🏞️ CNN Basics","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/cnn-intro/"},"url":"http://localhost:4000/blog/cnn-intro/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ajith Raghavan"},"dateModified":"2025-08-26T00:00:00+05:30","datePublished":"2025-08-26T00:00:00+05:30","description":"NST Basics","headline":"Neural Style Transfer Basics","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/nst-intro/"},"url":"http://localhost:4000/blog/nst-intro/"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -117,12 +117,12 @@
         <span class="breadcrumb-separator">/</span>
         <a href="/blog/">Blog</a>
         <span class="breadcrumb-separator">/</span>
-        <span>🏞️ CNN Basics</span>
+        <span>Neural Style Transfer Basics</span>
     </div>
     
     <article>
         <header class="article-header">
-            <h1>🏞️ CNN Basics</h1>
+            <h1>Neural Style Transfer Basics</h1>
             <div class="article-meta">
                 <time datetime="2025-08-26T00:00:00+05:30">08/26/2025</time>
                  · Ajith Raghavan
@@ -134,8 +134,8 @@
             
             <div class="article-cover">
                 <div class="theme-info">
-                    <h2>Emoji Generator</h2>
-                    <h1 class="title">🏞️ CNN Basics</h1>
+                    <h2></h2>
+                    <h1 class="title">Neural Style Transfer Basics</h1>
                     
                     <div class="features">
                         
@@ -153,89 +153,78 @@
             
             
 
-            <h2 id="-convnet">⿻ ConvNet</h2>
+            <h2 id="neural-style-transfernst">Neural Style Transfer(NST)</h2>
 
-<p>☝️- This should be best(available) Emoji 😉 - <a href="https://ajithraghavan.github.io/blog/emoji-generator/">Emoji Generator</a></p>
+<p>It is a technique to apply the “filter” technically “Style” to your “original” technically “Content” image, it would come under an umbrella of GenAI(not that much)</p>
 
-<p>Convolution Neural Network (CNN or ConvNet) is a type of Neural Network, which is good at processing image</p>
+<p>Goal of NST is to preserve the Content of the Content Image and also to apply the Style of the Style Reference Image!</p>
 
-<p>We do Convolution(Cross Correlation), by following BUT much larger and bigger</p>
+<p>To understand NST better we need to understand what is CNN and what is learns?</p>
 
-<p>Yes, now also, still competitive to ViT(Vision Transformer)</p>
+<p><a href="https://ajithraghavan.github.io/blog/cnn-intro/">Please learn here</a></p>
 
-<p>With ConvNet we can do,</p>
+<h2 id="️-back-to-nst">↪️ Back to NST!</h2>
 
-<h3 id="image-classification">Image Classification</h3>
+<p>What each Layers in ConvNet is the main anchor we come back to NST for understanding!</p>
 
-<p>Where we classify image, like what contains in an image</p>
+<p>In NST like Typical Neural Network, we won’t let learn the Parameters of the Neural Network by using Loss Function, but we will compute loss between Content, Style and Generated Image</p>
 
-<p>Some Models are:</p>
+<p>😎 Cool right?</p>
 
-<ol>
-  <li>AlexNet</li>
-  <li>VGGNet(16, 19)</li>
-  <li>Inception(Very different approach)</li>
-  <li>ResNet(Responsible for Residual Connection which is used in Transformers too!)</li>
-</ol>
+<h3 id="generating-procedure">Generating Procedure</h3>
+<p>To generate and image with Content Image in Style of Style Image we need to have Cost Function to tell us each like,</p>
 
-<h3 id="object-detection">Object Detection</h3>
+<p>How much different is Generated Image from Content Image?</p>
 
-<p>Detect and draw Bounding Box around the objects in the image like Car, Pedastrian</p>
+<p>How much different is Generated Image from Style Image?</p>
 
-<p>Some Models are:</p>
+<h5 id="content-cost-function-">Content Cost Function :</h5>
+<p>How different the Generated Image is from Content Image</p>
+<div align="center">
+    $$J_{\text{content}}(C, G) = \frac{1}{2} \sum_{i,j} \left(F_{ij}^G - F_{ij}^C\right)^2$$
+</div>
 
-<ol>
-  <li>R-CNN</li>
-  <li>YOLO
-    <ul>
-      <li>YOLO is such an amazing Paper covers cool topics like:
-        <ol>
-          <li>Intersection Over Union(IoU)</li>
-          <li>Non-Max Suppression</li>
-          <li>Anchor Boxes</li>
-        </ol>
-      </li>
-    </ul>
-  </li>
-</ol>
+<h5 id="style-loss-for-a-single-layer-">Style Loss for a Single Layer :</h5>
+<p>We say “Style” as a Correlation between Activations across channels</p>
+<div align="center">
+    $$J_{style} = \frac{1}{4N_l^2M_l^2} \sum_{i,j} \left(G_{ij}^G - G_{ij}^S\right)^2$$
+</div>
+<p>Correlation tells you which of the “High Level Texture” components tends to occur or not occur together in part of the image</p>
 
-<h3 id="image-segmentation">Image Segmentation</h3>
+<p>So, Degree of Correlation gives us one way of measuring this</p>
 
-<p>Where we paint the color around possible Objects in an image</p>
+<p>Across Channels we will find Correlation like if the image has Specific Texture how much degree Another Texture exists</p>
 
-<p>Some Models are:</p>
+<p>We can assume ,</p>
 
-<ol>
-  <li>FCN</li>
-  <li>U‑Net 😍</li>
-</ol>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Specific Texture as "Vertical Lines", "Cross Lines", etc
 
-<p>And much more CNN Models</p>
+2. Another Texture as "Cross Lines", etc
+</code></pre></div></div>
 
-<p>Let us discuss more in another Post!</p>
+<p>Correlated : Means whenever the part of the image has Specific Texture, that part of the image will probably have Another Texture</p>
 
-<h3 id="what-deep-convnet-learns">What Deep ConvNet Learns?</h3>
+<p>Uncorrelated : Means whenever the part of the image has Specific Texture, probably won’t have Another Texture</p>
 
-<p>But, crucial question CNN have these layers, what these layers learn?</p>
+<p>For that we need Gram Matrix to do that!</p>
+<h5 id="gram-matrix--">Gram Matrix  :</h5>
 
-<p>Let us Consider this image and let us consider that this CNN has 4 Layers</p>
+<div align="center">
+    $$G_{ij}^l = \sum_{k} F_{ik}^l F_{jk}^l$$
+</div>
 
-<p><img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2019/01/image-classification-model-6731d4bb5c389.webp" alt="Image" />
-Source : <a href="analyticsvidhya.com">Analytics Vidhya</a></p>
+<h5 id="total-loss-">Total Loss :</h5>
+<p>Now we Compute the Total Loss and Optimize the Generated Image and get our desired Style Image</p>
 
-<p>It might Learn the Features like,</p>
+<div align="center">
+    $$J_{\text{total}}(C, S, G) = \alpha J_{\text{content}}(C, G) + \beta J_{\text{style}}(S, G)$$
+</div>
 
-<p>First Layer :  “Straight Line”, “Cross Lines”, etc</p>
+<blockquote>
+  <p>We get, Generated Image in the Content of Content Image and Style of Style Image</p>
+</blockquote>
 
-<p>Second Layer : “Curves”, “ Common Pattern”, etc</p>
-
-<p>Third Layer : “Cat Nose”, “Dog Ears” etc</p>
-
-<p>Fourth Layer : “Cat Face”, “Dog Face” etc</p>
-
-<p>Earlier Layers learns small patters like Lines, Shapes and</p>
-
-<p>Deep Layers will Learn Complex Features like Nose, Ears, even Face etc</p>
+<p>Thanks for reading</p>
 
         </div>
     </article>

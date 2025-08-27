@@ -6,7 +6,7 @@ author: "Ajith Raghavan"
 description: "CNN Basics"
 tags: ["🧑‍💻 ML", "Neural Network", "CNN"]
 cover_image: true
-subtitle: "Emoji Generator"
+subtitle: ""
 ---
 
 ## ⿻ ConvNet
@@ -60,7 +60,7 @@ Let us discuss more in another Post!
 
 ### What Deep ConvNet Learns?
 
-But, crucial question CNN have these layers, what these layers learn?
+The crucial question CNN have these layers, what these layers learn?
 
 Let us Consider this image and let us consider that this CNN has 4 Layers
 
@@ -77,6 +77,9 @@ Third Layer : "Cat Nose", "Dog Ears" etc
 
 Fourth Layer : "Cat Face", "Dog Face" etc 
 
-Earlier Layers learns small patters like Lines, Shapes and 
+> Earlier Layers learns small patters like Lines, Shapes and 
 
-Deep Layers will Learn Complex Features like Nose, Ears, even Face etc
+> Deep Layers will Learn Complex Features like Nose, Ears, even Face etc
+
+
+Thanks for reading
