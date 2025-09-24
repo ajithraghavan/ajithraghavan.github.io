@@ -3,7 +3,7 @@ layout: post
 title: "Introduction to DSPy with Ollama"
 date: 2025-09-24
 author: "Ajith Raghavan"
-description: "NST Basics"
+description: "DSPy with Ollama"
 tags: ["🧑‍💻 DSPy", "AI Agent", "AI Application"]
 cover_image: true
 subtitle: ""
@@ -11,7 +11,7 @@ subtitle: ""
 
 # Introduction to DSPy with Ollama
 
- ## 🤔 What is DSPy?
+## 🤔 What is DSPy?
 
 DSPy is a Declarative Framework for building modular AI Software that allows to focus on Core Logic or Business Logic rather than much on Prompting
 
@@ -35,15 +35,15 @@ It is the building block of DSPy
 
 There are many built in modules like,
 
-    - dspy.Predict
+- dspy.Predict
 
-    - dspy.ChainOfThought
+- dspy.ChainOfThought
 
-    - dspy.ProgramOfThought
+- dspy.ProgramOfThought
 
-    - dspy.ReAct
+- dspy.ReAct
 
-    - dspy.MultiChainComparison
+- dspy.MultiChainComparison
 
 Each built in module abstracts the prompting technique
 
@@ -51,13 +51,13 @@ Each built in module abstracts the prompting technique
 
 It is the bridge between Module and LLM and is responsible,
 
-    - Translating Signatures into System Prompt
+- Translating Signatures into System Prompt
 
-    - Formatting Input
+- Formatting Input
 
-    - Parsing output
+- Parsing output
 
-    - much more
+- much more
 
 ### Tools
 
@@ -76,7 +76,7 @@ Example 1 :
 
 Simple Example
 
-```
+```python
 import dspy
 
 def setup_ollama():
@@ -112,7 +112,7 @@ print(classify(question=question).answer)
 
 Example 2 : Tool Call with ReAct
 
-```
+```python
 import dspy
 from datetime import datetime
 
