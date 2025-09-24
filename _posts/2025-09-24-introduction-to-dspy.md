@@ -36,13 +36,9 @@ It is the building block of DSPy
 There are many built in modules like,
 
 - dspy.Predict
-
 - dspy.ChainOfThought
-
 - dspy.ProgramOfThought
-
 - dspy.ReAct
-
 - dspy.MultiChainComparison
 
 Each built in module abstracts the prompting technique
@@ -52,11 +48,8 @@ Each built in module abstracts the prompting technique
 It is the bridge between Module and LLM and is responsible,
 
 - Translating Signatures into System Prompt
-
 - Formatting Input
-
 - Parsing output
-
 - much more
 
 ### Tools
