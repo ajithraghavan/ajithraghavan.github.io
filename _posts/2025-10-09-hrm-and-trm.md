@@ -136,13 +136,14 @@ TRM use **Full Backpropagation Through Time** rather than 1 Step Gradient Approx
 |-----------------|-------------------------------------|---------------------------------|
 |Architecture     |Two separate networks (fL and fH)    |Global Attention                 |
 |Parameters       |27M                                  |7M (with Attention) / 5M (MLP)   |
+
 etc.,
 
 ## 📚 References
 
 ### Research Papers
-[1] Wang, G., et al. (2025) https://arxiv.org/pdf/2506.21734
-[2] Jolicoeur-Martineau, A (2025) https://arxiv.org/pdf/2510.04871
+- [1] Wang, G., et al. (2025) https://arxiv.org/pdf/2506.21734
+- [2] Jolicoeur-Martineau, A (2025) https://arxiv.org/pdf/2510.04871
 
 ###Code Repositories
 
