@@ -78,7 +78,7 @@ So, HRM will use Backpropagation to last two Function Evaluations like final `fL
 
 ### HRM Results
 
-![HRM Brain](/assets/images/hrm-and-trm/hrm-results.png)
+![HRM Results](/assets/images/hrm-and-trm/hrm-results.png)
 
 Although there are more debate and discussion over HRM and [ARC-AGI itself tested HRM](https://arcprize.org/blog/hrm-analysis)
 
@@ -119,12 +119,19 @@ So, the Model Recursively Improve `z` given `x`, `y` and `previous z` and update
 ### Backpropagation Through Time (BPTT)
 TRM use **Full Backpropagation Through Time** rather than 1 Step Gradient Approximation in HRM
 
+## TRM Results
+
+![TRM Result 1](/assets/images/hrm-and-trm/trm-result-1.png)
+
+![TRM Result 2](/assets/images/hrm-and-trm/trm-result-2.png)
+
 ## 📝 Notable Points
 
 - Tiny Recursive Model use Multilayer Perceptron for the task and they too say like different Architecture works for different problems like TRM with **Self Attention**
 - And, TRM does not use additional Forward Pass needed with **ACT**
 
 ## 🥊 Overall Differences Between HRM and TRM
+
 |Feature          |HRM                                  |TRM                              |
 |-----------------|-------------------------------------|---------------------------------|
 |Architecture     |Two separate networks (fL and fH)    |Global Attention                 |
