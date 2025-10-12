@@ -1,32 +1,38 @@
 ---
 layout: post
-title: "First Post"
-date: 2025-08-24
+title: "Browser use in Client"
+date: 2025-10-11
 author: "Ajith Raghavan"
-description: "Welcome to my tech blog where I share insights and tutorials on technology, programming, AI, and machine learning."
-tags: ["🧑‍💻 Tech", "🙋 Intro"]
+description: "Blog about how to use Brower use like feature in Client that is in Browser Itself"
+tags: ["🧑‍💻 Tech", "🙋 Agent"]
 cover_image: true
 subtitle: "First Template"
-toc: |
-  <ul>
-    <li><a href="#intro">Intro</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
 ---
 
-## About Me {#intro}
+## Introduction
+On top of our Application, we would have an Agent. 
 
-👋 Hi, I am Ajith Raghavan Welcome to my tech blog where I share insights and tutorials on technology, programming, AI, and machine learning.
+So the Agent will do tasks and give the response.
 
-Let us explore 🚀
+But, how can we use the Agent to control our Browser?
 
-## About This Blog {#contact}
+Let us see here 🚀
 
-This blog was created in 2025 as a platform to share knowledge, insights, and tutorials about technologies I work with and find interesting.
+## Through LLM
+1. We use LLM where we can pass all the `fields` with the `type` to LLM
+2. For that, in the Front End user can feed like say,
+ ```
+ @BrowserAgent please book a ticket for me today
+ ```
+3. So, in the Agent we need to give the proper instruction to give the response or instructions to follow to do in the Browser through JavaScript
+4. And from the response from LLM we can do the `action` accordingly
+5. So, we need to have a JavaScript Handler to do the `action` given by LLM
+6. Now our Agent should have controlled Browser
+7. Here, we have seen the single flow, for **Truly** Agentic we need to again give the performed `action` and current state to LLM and LLM will again process and give the updated `action` and we need to process and continue the same
 
-Here you'll find articles about:
+In this way we achieve the Agent that will have the ability to control the Browser in the Browser itself
 
-- Programming languages and frameworks
-- AI and Machine Learning concepts
-- Technical tutorials and guides
-- Thoughts on emerging Technologies
+This will give our Agent a Powerful Mechanism that will be very powerful in the Future
+
+Thanks for reading!
+
