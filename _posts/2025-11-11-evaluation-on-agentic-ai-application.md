@@ -71,10 +71,10 @@ So, with the Evaluation DataSet may like 20 we set up Table like,
 
 | Prompt | Web Search | Web Fetch | Response |
 | --- | --- | --- | --- |
-| Agentic AI | | May be wrong resource | |
-| Secure Agent | | | LLM summarize error |
+| Agentic AI |   | May be wrong resource |   |
+| Secure Agent |   |   | LLM summarize error |
 | ... | ... | ... | ... |
-| Agent Workflow | | May be wrong pages | |
+| Agent Workflow |   | May be wrong pages |   |
 
 From this Table we count up, how much number of error count up to maximum number of error out of 20
 
