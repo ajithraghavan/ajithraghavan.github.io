@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My Take on OpenClaw"
+title: "🦞 Inside OpenClaw: How This AI Agent Actually Works Under the Hood 🔧"
 date: 2026-02-06
 author: "Ajith Raghavan"
 description: "OpenClaw"
