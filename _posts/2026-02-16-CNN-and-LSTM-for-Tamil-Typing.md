@@ -3,7 +3,7 @@ layout: post
 title: "CNN-LSTM Hybrid Architecture for Thanglish-to-Tamil : Bridging 26 Letters to 247 Characters"
 date: 2026-02-16
 author: "Ajith Raghavan"
-description: "OpenClaw"
+description: "Built a CNN-LSTM hybrid architecture for Thanglish-to-Tamil transliteration that outperforms BiGRU+Attention while being 16x smaller—proving that 1D convolutions can efficiently capture local n-gram patterns for character-level sequence tasks. Sometimes the simplest architecture wins when it aligns with the problem's inherent structure 🚀"
 tags: ["Tamil", "Thanglish", "CNN", "LSTM"]
 cover_image: false
 subtitle: ""
