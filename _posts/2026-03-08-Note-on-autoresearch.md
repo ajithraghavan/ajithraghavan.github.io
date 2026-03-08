@@ -11,7 +11,7 @@ subtitle: ""
 
 # What is autoresearch?
 
-`autoresearch` lets AI Agents autonomously conduct Machine Learning Research overnight on a single GPU
+`[autoresearch](https://github.com/karpathy/autoresearch)` lets AI Agents autonomously conduct Machine Learning Research overnight on a single GPU
 
 Note : It is a playful but serious exploration of where AI Assisted Research might be heading
 
