@@ -1,19 +1,46 @@
 /* Base Styles */
 :root {
+  --accent-color: #3b82f6;
+  --accent-hover: #2563eb;
+  --header-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --body-font: var(--header-font);
+  --code-font: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  --transition-speed: 0.3s;
+
+  /* Light theme (default) */
+  --primary-color: #ffffff;
+  --secondary-color: #f8f9fa;
+  --text-color: #1a1a1a;
+  --muted-color: #6b7280;
+  --border-color: #e5e7eb;
+  --card-bg: #ffffff;
+  --code-bg: #f1f5f9;
+  --code-text: #334155;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #1a1a1a;
+    --secondary-color: #252525;
+    --text-color: #eaeaea;
+    --muted-color: #9ca3af;
+    --border-color: #374151;
+    --card-bg: #252525;
+    --code-bg: #1e293b;
+    --code-text: #e2e8f0;
+  }
+}
+
+/* Manual overrides via JS */
+body.dark-theme {
   --primary-color: #1a1a1a;
   --secondary-color: #252525;
   --text-color: #eaeaea;
-  --accent-color: #3b82f6;
-  --accent-hover: #2563eb;
   --muted-color: #9ca3af;
   --border-color: #374151;
   --card-bg: #252525;
   --code-bg: #1e293b;
   --code-text: #e2e8f0;
-  --header-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  --body-font: var(--header-font);
-  --code-font: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-  --transition-speed: 0.3s;
 }
 
 body.light-theme {
@@ -25,6 +52,10 @@ body.light-theme {
   --card-bg: #ffffff;
   --code-bg: #f1f5f9;
   --code-text: #334155;
+}
+
+body.dark-theme .article-header {
+  background-color: rgba(53, 53, 61, 0.3);
 }
 
 body.light-theme .article-header {

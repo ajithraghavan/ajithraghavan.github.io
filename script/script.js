@@ -1,21 +1,34 @@
         // Set current year in footer
         document.getElementById('current-year').textContent = new Date().getFullYear();
-        
+
         // Theme toggle functionality
         const themeToggle = document.querySelector('.theme-toggle');
         const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-        
-        // Check for saved theme preference or use the system preference
-        const currentTheme = localStorage.getItem('theme') || 
-                            (prefersDarkScheme.matches ? 'dark' : 'light');
-        
-        // Set the initial theme
-        document.body.classList.toggle('light-theme', currentTheme === 'light');
-        
+
+        // Check for saved theme preference; if none, follow system (no class override)
+        const savedTheme = localStorage.getItem('theme');
+
+        if (savedTheme === 'light') {
+            document.body.classList.add('light-theme');
+        } else if (savedTheme === 'dark') {
+            document.body.classList.add('dark-theme');
+        }
+        // If no savedTheme, no class is added — CSS media query handles it
+
         // Toggle theme when button is clicked
         themeToggle.addEventListener('click', () => {
-            const isLight = document.body.classList.toggle('light-theme');
-            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+            const isDark = document.body.classList.contains('dark-theme') ||
+                           (!document.body.classList.contains('light-theme') && prefersDarkScheme.matches);
+
+            document.body.classList.remove('light-theme', 'dark-theme');
+
+            if (isDark) {
+                document.body.classList.add('light-theme');
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.body.classList.add('dark-theme');
+                localStorage.setItem('theme', 'dark');
+            }
         });
 
         // Mobile menu toggle
