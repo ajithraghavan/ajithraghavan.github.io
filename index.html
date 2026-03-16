@@ -27,7 +27,7 @@ layout: default
             <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
             <p>{{ post.description | default: post.excerpt | strip_html | truncatewords: 20 }}</p>
             <div class="post-meta">
-                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d-%m-%Y" }}</time>
                 {% if post.read_time %} · {{ post.read_time }} min read{% endif %}
                 {% if post.author %} · <span class="author">{{ post.author }}</span>{% endif %}
             </div>
