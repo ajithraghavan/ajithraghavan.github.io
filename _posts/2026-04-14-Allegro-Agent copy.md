@@ -113,7 +113,7 @@ A real world Harnessed Agent Runtime usually contains five layers working togeth
 2. Context Primitives : Utilities that automatically Compact and manage the Context Window so the Agent stays operational across long Runs
 3. Guardrails : Hard limits (max steps, max Tokens, forbidden actions, allowed domains) that can stop a Run before it does damage
 4. The Agent Loop : The Orchestration Code that Iterates like receive Output from LLM -> Parse -> Execute Tools -> Feed Results back -> Repeat
-5. The Verify Step : A deterministic check at the end. Did the Linter pass? Did the Test suite go green? Is the Output Schema Valid? If not, the work isn't done, no matter what the model claims(Some times Ralph Loops)
+5. The Verify Step : A deterministic check at the end. Did the Linter pass? Did the Test suite go green? Is the Output Schema Valid? If not, the work isn't done, no matter what the Model claims(Some times in Ralph Loops)
 
 This is also where the discipline reveals itself as deeply cumulative
 
