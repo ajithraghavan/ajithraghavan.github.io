@@ -189,7 +189,7 @@ register_provider("openai", OpenAIProvider)
 
 ### Configuration Options
 
-The `Agent` class accepts the following keyword arguments:
+The `Agent` class accepts the following keyword Arguments :
 
 | Argument | Type | Description |
 |---|---|---|
