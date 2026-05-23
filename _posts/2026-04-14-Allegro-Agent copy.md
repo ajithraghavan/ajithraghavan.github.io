@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "🎶 AllegroAgent 🚀"
-date: 2026-04-14
+title: "Harness Engineering"
+date: 2026-05-23
 author: "Ajith Raghavan"
-description: "A Lightweight Python Framework for Building Stateful AI Agents 🚀"
-tags: ["AI", "AI Agent", "AllegroAgent", "Agentic AI Framework", "Fast Agent"]
+description: "A Blog explaining Harness Engineering"
+tags: ["AI", "AI Agent", "Harness", "Harness Engieering"]
 cover_image: false
 subtitle: ""
 ---
