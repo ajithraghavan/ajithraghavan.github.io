@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Harness Engineering"
+title: "⚙️ Harness Engineering"
 date: 2026-05-23
 author: "Ajith Raghavan"
 description: "A Blog explaining Harness Engineering"
@@ -26,7 +26,7 @@ That __Everything Around It__ has name now......
 
 💭 Ah, Story?  Please don't worry we won't see boring one and let us keep short
 
-On February 5, 2026, Mitchell Hashimoto published a short Personal Blog Post describing a habit he had Developed, like every time one of his AI agents made a mistake, he didn't just patch the Prompt but he Engineered a permanent fix into the Agent's Environment so that specific mistake became structurally impossible to repeat
+On February 5, 2026, [Mitchell Hashimoto published a short Personal Blog Post](https://mitchellh.com/writing/my-ai-adoption-journey) describing a habit he had Developed, like every time one of his AI agents made a mistake, he didn't just patch the Prompt but he Engineered a permanent fix into the Agent's Environment so that specific mistake became structurally impossible to repeat
 
 He called the practice "Engineering the Harness"
 
@@ -117,7 +117,7 @@ A real world Harnessed Agent Runtime usually contains five layers working togeth
 
 This is also where the discipline reveals itself as deeply cumulative
 
-Some Call it the [ratchet principle](https://en.wikipedia.org/wiki/Ratchet_(device)) : the Harness only tightens, never loosens
+Some Call it the [Ratchet Principle](https://en.wikipedia.org/wiki/Ratchet_(device)) : the Harness only tightens, never loosens
 
 Every guide you add traces back to a real failure. Every sensor traces back to a real Bug
 
