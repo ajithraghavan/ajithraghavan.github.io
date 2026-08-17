@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "🎶 AllegroCode 🚀"
-date: 2026-04-14
+date: 2026-08-17
 author: "Ajith Raghavan"
 description: "A Lightweight Python AI Coding Agent 🚀"
 tags: ["AI", "AI Agent", "AllegroAgent", "Agentic AI Framework", "Fast Agent", "AllegroCode"]
