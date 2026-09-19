@@ -10,7 +10,7 @@ subtitle: ""
 ---
 
 
-# Jev : an AI model very different from ChatGPT
+# Jev : an AI Model very different from ChatGPT
 
 ## Quick Introduction
 
@@ -30,7 +30,7 @@ TypeSafe's argument is that this mismatch is a design problem, not a prompting p
 
 Jev is TypeSafe's Flagship Model, and the first of what they call **System One** Models: models built to make fast, structured decisions that Software consumes directly
 
-(💭 System One?  Did they inspired from Thinking, Fast and Slow by Daniel Kahneman?  Where System 1 is the fast, intuitive read, System 2 is slow deliberation)
+They inspired from Thinking, Fast and Slow by Daniel Kahneman, where System 1 is the fast, intuitive read, System 2 is slow deliberation
 
 It's been said like it's built for the kind of judgment a knowledgeable person makes in the right context in front of them
 
